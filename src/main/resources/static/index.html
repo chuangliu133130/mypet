@@ -90,40 +90,112 @@
         <el-main style="padding: 0;margin: 0">
             <span style="position: absolute">
             <img src="https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/bannerbg_2.jpg" alt=""
-                 style="height: 500px ;width: 100% ;margin: 0;padding: 0">
+                 style="height: 600px ;width: 100% ;margin: 0;padding: 0">
          </span>
 
+<!--轮播图swipeslice===开始-->
+            <el-row gutter="0" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+                <el-col span="24" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
 
-            <el-row gutter="0" style="height: 500px ;width: 100% ;margin: 0;padding: 0">
-                <el-col span="24" style="height: 500px ;width: 100% ;margin: 0;padding: 0">
+                    <div class="swiper-container" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+                        <div class="swiper-wrapper" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
 
-                    <div class="swiper-container" style="height: 500px ;width: 100% ;margin: 0;padding: 0">
-                        <div class="swiper-wrapper" style="height: 500px ;width: 100% ;margin: 0;padding: 0">
-
-                            <div class="swiper-slide" style="height: 500px ;width: 100% ;margin: 0;padding: 0">
-                                <input class="ue-banbtn" value="免费试用" type="button" @click="freeusebtnclick()" style="border-radius: 25px; width: 156px;height: 50px ; left:150px ;top:280px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;">
+                            <div class="swiper-slide" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+                                <input class="ue-banbtn" value="免费试用" type="button" @click="freeusebtnclick()" style="border-radius: 25px; width: 156px;height: 50px ; left:150px ;top:380px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;">
 
                                 <img src="./imgs/slide1.png" alt=""
-                                     style="height: 500px ;width: 100% ;margin: 0;padding: 0">
+                                     style="height: 600px ;width: 100% ;margin: 0;padding: 0">
 
 
                             </div>
 
-                            <div class="swiper-slide" style="height: 500px ;width: 100% ;margin: 0;padding: 0">
+                            <div class="swiper-slide" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
                                 <img src="./imgs/slide2.png" alt=""
-                                     style="height: 500px ;width: 100% ;margin: 0;padding: 0">
+                                     style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+                                <input class="ue-banbtn" value="登陆宠赞系统" type="button" @click="loginbtnclick()" style="border-radius: 25px; width: 156px;height: 50px ; left:150px ;top:430px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;">
+
+                                <input class="ue-banbtn" value="宠赞系统演示" type="button" @click="petshowbtnclick()" style="border-radius: 25px; width: 156px;height: 50px ; left:330px ;top:430px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;">
+
 
                             </div>
-                            <div class="swiper-slide" style="height: 500px ;width: 100% ;margin: 0;padding: 0">
+                            <div class="swiper-slide" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
                                 <img src="./imgs/slide3.png" alt=""
-                                     style="height: 500px ;width: 100% ;margin: 0;padding: 0">
+                                     style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+                                <input class="ue-banbtn" value="扫码演示" type="button" @click="scanbtnclick()" style="border-radius: 25px; width: 156px;height: 50px ; left:150px ;top:380px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;">
 
                             </div>
-                            <div class="swiper-slide" style="height: 500px ;width: 100% ;margin: 0;padding: 0">
+                            <div class="swiper-slide" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
                                 <img src="./imgs/slide4.png" alt=""
-                                     style="height: 500px ;width: 100% ;margin: 0;padding: 0">
+                                     style="height: 600px ;width: 100% ;margin: 0;padding: 0">
 
                             </div>
+                        </div>
+                        <!-- 添加分页器 -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </el-col>
+            </el-row>
+<!--            轮播图swipeslice===结束-->
+
+
+            <el-row gutter="0" style="height: 600px ;width: 50% ;margin: 0;padding: 0">
+                <el-col span="24" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+
+                    <div class="swiper-container" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+                        <div class="swiper-wrapper" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+
+                            <div class="swiper-slide" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+<!--                                <input class="ue-banbtn" value="免费试用" type="button" @click="freeusebtnclick()" style="border-radius: 25px; width: 156px;height: 50px ; left:150px ;top:380px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;">-->
+
+                                <img src="https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/index_011.jpg" alt=""
+                                     style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+
+
+                            </div>
+
+                            <div class="swiper-slide" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+                                <img src="./imgs/slide2.png" alt=""
+                                     style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+                                <input class="ue-banbtn" value="登陆宠赞系统" type="button" @click="loginbtnclick()" style="border-radius: 25px; width: 156px;height: 50px ; left:150px ;top:430px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;">
+
+                                <input class="ue-banbtn" value="宠赞系统演示" type="button" @click="petshowbtnclick()" style="border-radius: 25px; width: 156px;height: 50px ; left:330px ;top:430px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;">
+
+
+                            </div>
+
+                        </div>
+                        <!-- 添加分页器 -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </el-col>
+            </el-row>
+            <el-row gutter="0" style="height: 600px ;width: 50% ;margin: 0;padding: 0">
+                <el-col span="24" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+
+                    <div class="swiper-container" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+                        <div class="swiper-wrapper" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+
+                            <div class="swiper-slide" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+                                <!--                                <input class="ue-banbtn" value="免费试用" type="button" @click="freeusebtnclick()" style="border-radius: 25px; width: 156px;height: 50px ; left:150px ;top:380px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;">-->
+
+                                <img src="https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/index_011.jpg" alt=""
+                                     style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+
+
+                            </div>
+
+                            <div class="swiper-slide" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+                                <img src="./imgs/slide2.png" alt=""
+                                     style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+                                <input class="ue-banbtn" value="登陆宠赞系统" type="button" @click="loginbtnclick()" style="border-radius: 25px; width: 156px;height: 50px ; left:150px ;top:430px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;">
+
+                                <input class="ue-banbtn" value="宠赞系统演示" type="button" @click="petshowbtnclick()" style="border-radius: 25px; width: 156px;height: 50px ; left:330px ;top:430px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;">
+
+
+                            </div>
+
                         </div>
                         <!-- 添加分页器 -->
                         <div class="swiper-pagination"></div>
@@ -176,9 +248,20 @@
                 }
             },
             freeusebtnclick(x) {
-                alert("asfaf")
+                alert("免费试用")
             },
+            loginbtnclick(){
+                alert("登陆宠赞系统")
 
+            },
+            petshowbtnclick(){
+                alert("宠赞系统演示")
+
+            },
+            scanbtnclick(){
+                alert("扫码演示")
+
+            },
             handleSelect(key, keyPath) {
                 console.log(key, keyPath);
             }

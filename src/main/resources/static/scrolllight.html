@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>上下滚动的跑马灯广告</title>
+  <style>
+    #ad-container {
+      position: fixed;
+      width: 100%;
+      background-color: #f1f1f1;
+      padding: 10px;
+      box-sizing: border-box;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<div id="ad-container">这是一条广告内容，点击查看详情</div>
+<script>
+  var adContainer = document.getElementById('ad-container');
+  var position = 'top'; // 广告容器的位置，初始化为顶部
+  setInterval(function() { // 设置定时器，每隔一段时间执行一次
+    if (position === 'top') {
+      adContainer.style.top = '-50px'; // 向上滚动
+      position = 'bottom';
+    } else {
+      adContainer.style.top = '0'; // 恢复原位置
+      position = 'top';
+    }
+  }, 1000); // 设置滚动间隔，单位为毫秒
+</script>
+</body>
+</html>
