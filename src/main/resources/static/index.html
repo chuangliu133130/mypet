@@ -30,8 +30,17 @@
             padding: 15px;
             box-sizing: border-box;
         }
-        .ue-banbtn{
 
+        .ue-banbtn {
+
+        }
+
+        body {
+            border: 0 solid white;
+        }
+
+        * {
+            border: 0 solid white;
         }
     </style>
     <!-- 引入 Swipe 库 -->
@@ -76,10 +85,10 @@
     </el-menu>
     </span>
                 <input type="button"
-                       style="border: none; border-radius: 4px; width: 98px;height: 34px ; background-color: #FAE132 ; position: absolute ; right: 150px ;top:20px;"
+                       style="border: none; border-radius: 4px; width: 98px;height: 34px ; background-color: #FAE132 ; position: absolute ; right: 150px ;top:10px;"
                        value="快速注册" @click="reg()"></input>
                 <input type="button"
-                       style="border: 1px solid #FAE132; border-radius: 4px; width: 60px;height: 34px ; background-color: white ; position: absolute ; right: 50px ;top:20px;"
+                       style="border: 1px solid #FAE132; border-radius: 4px; width: 60px;height: 34px ; background-color: white ; position: absolute ; right: 50px ;top:10px;"
                        value="登陆" @click="login()"></input>
             </el-header>
         </div>
@@ -93,15 +102,19 @@
                  style="height: 600px ;width: 100% ;margin: 0;padding: 0">
          </span>
 
-<!--轮播图swipeslice===开始-->
-            <el-row gutter="0" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
-                <el-col span="24" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+            <!--第一组轮播图swipeslice===开始-->
+            <el-row gutter="0" style="height: 600px ;width: 100% ;margin: 0;padding: 0;border: 0 solid white;">
+                <el-col span="24" style="height: 600px ;width: 100% ;margin: 0;padding: 0;border: 0 solid white;">
 
-                    <div class="swiper-container" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
-                        <div class="swiper-wrapper" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+                    <div class="swiper-container"
+                         style="height: 600px ;width: 100% ;margin: 0;padding: 0;border: 0 solid white;">
+                        <div class="swiper-wrapper"
+                             style="height: 600px ;width: 100% ;margin: 0;padding: 0;border: 0 solid white;">
 
-                            <div class="swiper-slide" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
-                                <input class="ue-banbtn" value="免费试用" type="button" @click="freeusebtnclick()" style="border-radius: 25px; width: 156px;height: 50px ; left:150px ;top:380px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;">
+                            <div class="swiper-slide"
+                                 style="height: 600px ;width: 100% ;margin: 0;padding: 0;border: 0 solid white;">
+                                <input class="ue-banbtn" value="免费试用" type="button" @click="freeusebtnclick()"
+                                       style="border-radius: 25px; width: 156px;height: 50px ; left:150px ;top:380px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;border: 1px solid">
 
                                 <img src="./imgs/slide1.png" alt=""
                                      style="height: 600px ;width: 100% ;margin: 0;padding: 0">
@@ -109,19 +122,23 @@
 
                             </div>
 
-                            <div class="swiper-slide" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+                            <div class="swiper-slide"
+                                 style="height: 600px ;width: 100% ;margin: 0;padding: 0;border: 0 solid white;">
                                 <img src="./imgs/slide2.png" alt=""
                                      style="height: 600px ;width: 100% ;margin: 0;padding: 0">
-                                <input class="ue-banbtn" value="登陆宠赞系统" type="button" @click="loginbtnclick()" style="border-radius: 25px; width: 156px;height: 50px ; left:150px ;top:430px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;">
+                                <input class="ue-banbtn" value="登陆宠赞系统" type="button" @click="loginbtnclick()"
+                                       style="border-radius: 25px; width: 156px;height: 50px ; left:150px ;top:430px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;border: 1px solid">
 
-                                <input class="ue-banbtn" value="宠赞系统演示" type="button" @click="petshowbtnclick()" style="border-radius: 25px; width: 156px;height: 50px ; left:330px ;top:430px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;">
+                                <input class="ue-banbtn" value="宠赞系统演示" type="button" @click="petshowbtnclick()"
+                                       style="border-radius: 25px; width: 156px;height: 50px ; left:330px ;top:430px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;border: 1px solid">
 
 
                             </div>
                             <div class="swiper-slide" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
                                 <img src="./imgs/slide3.png" alt=""
                                      style="height: 600px ;width: 100% ;margin: 0;padding: 0">
-                                <input class="ue-banbtn" value="扫码演示" type="button" @click="scanbtnclick()" style="border-radius: 25px; width: 156px;height: 50px ; left:150px ;top:380px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;">
+                                <input class="ue-banbtn" value="扫码演示" type="button" @click="scanbtnclick()"
+                                       style="border-radius: 25px; width: 156px;height: 50px ; left:150px ;top:380px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer; border: 1px solid">
 
                             </div>
                             <div class="swiper-slide" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
@@ -136,32 +153,80 @@
 
                 </el-col>
             </el-row>
-<!--            轮播图swipeslice===结束-->
+            <!--            第一组轮播图swipeslice===结束-->
 
 
-            <el-row gutter="0" style="height: 600px ;width: 50% ;margin: 0;padding: 0">
-                <el-col span="24" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+            <h1 style="font-size: 40px;font-weight: bold;text-align: center;line-height: 40px;height: 40px; margin: 0;padding: 0;margin-top: 15px;margin-bottom: 15px">
+                宠物店都在用的管理系统</h1>
 
-                    <div class="swiper-container" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
-                        <div class="swiper-wrapper" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
 
-                            <div class="swiper-slide" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
-<!--                                <input class="ue-banbtn" value="免费试用" type="button" @click="freeusebtnclick()" style="border-radius: 25px; width: 156px;height: 50px ; left:150px ;top:380px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;">-->
+            <!--            第二组轮播开始-->
 
-                                <img src="https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/index_011.jpg" alt=""
-                                     style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+            <el-row gutter="0" style="height: 400px ;width: 100% ;margin: 0;padding: 0;border: 0 solid white;">
+                <el-col span="24" style="height: 400px ;width: 100% ;margin: 0;padding: 0;border: 0 solid white;">
+
+                    <div class="swiper-container"
+                         style="height: 400px ;width: 100% ;margin: 0;padding: 0;border: 0 solid white;">
+                        <div class="swiper-wrapper"
+                             style="height: 400px ;width: 100% ;margin: 0;padding: 0;border: 0 solid white;">
+                            <!--            第二组轮播第一波开始-->
+
+                            <div span="24" class="swiper-slide"
+                                 style="height: 400px ;width: 100% ;margin: 0;padding: 0;border: 0 solid white;">
+
+                                <el-row gutter="0">
+                                    <el-col span="12">
+
+                                        <img style="border-radius: 10px;"
+                                             src="https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/index_011.jpg"
+                                             alt=""
+                                             style="height: 300px ;width: 100% ;margin-top: 30px;margin-bottom: 20px;margin-left: 20px;">
+
+                                    </el-col>
+
+
+                                    <el-col span="12">
+                                        <p style="font-size: 30px;font-weight: bold ;text-align: left">
+                                            高效管理宠物店</p>
+                                        <p style="text-align: left">
+                                            专为宠物店量身打造的宠物店管理系统，抛弃传统的管理方式和习惯，高效管理店铺。完善的商品收银功能、会员管理、寄养管理、商品进销存、库存预警、产品调拨等。</p>
+                                        <input type="button"
+                                               style="border: none; border-radius: 4px; width: 98px;height: 34px ; background-color: #FAE132 ; "
+                                               value="点击了解" @click="konwbtnclick()"></input>
+
+                                    </el-col>
+
+                                </el-row>
 
 
                             </div>
+                            <!--            第二组轮播第二波开始-->
 
-                            <div class="swiper-slide" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
-                                <img src="./imgs/slide2.png" alt=""
-                                     style="height: 600px ;width: 100% ;margin: 0;padding: 0">
-                                <input class="ue-banbtn" value="登陆宠赞系统" type="button" @click="loginbtnclick()" style="border-radius: 25px; width: 156px;height: 50px ; left:150px ;top:430px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;">
+                            <div span="24" class="swiper-slide"
+                                 style="height: 400px ;width: 100% ;margin: 0;padding: 0;border: 0 solid white;">
 
-                                <input class="ue-banbtn" value="宠赞系统演示" type="button" @click="petshowbtnclick()" style="border-radius: 25px; width: 156px;height: 50px ; left:330px ;top:430px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;">
+                                <el-row gutter="0">
+                                    <el-col span="12">
+                                        <img style="border-radius: 10px;"
+                                             src="https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/pro1.png"
+                                             alt=""
+                                             style="height: 300px ;width: 100% ;margin-top: 30px;margin-bottom: 20px;margin-left: 20px;">
+
+                                    </el-col>
+                                    <el-col span="12">
+
+                                        <p style="font-size: 30px;font-weight: bold ;text-align: left">
+                                            解决宠物店推广难题</p>
+                                        <p style="text-align: left">
+                                            专宠物店微信小程序全面来袭，宠老板教你玩转小程序，打造一个属于自己的宠物店微商城。全新流量入口，高级店铺展示，增加您的店铺曝光和认知，提高客户量。</p>
+                                        <input type="button"
+                                               style="border: none; border-radius: 4px; width: 98px;height: 34px ; background-color: #FAE132 ; "
+                                               value="点击了解" @click="konwSecondbtnclick()"></input>
 
 
+
+                                    </el-col>
+                                </el-row>
                             </div>
 
                         </div>
@@ -171,39 +236,81 @@
 
                 </el-col>
             </el-row>
-            <el-row gutter="0" style="height: 600px ;width: 50% ;margin: 0;padding: 0">
-                <el-col span="24" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
-
-                    <div class="swiper-container" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
-                        <div class="swiper-wrapper" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
-
-                            <div class="swiper-slide" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
-                                <!--                                <input class="ue-banbtn" value="免费试用" type="button" @click="freeusebtnclick()" style="border-radius: 25px; width: 156px;height: 50px ; left:150px ;top:380px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;">-->
-
-                                <img src="https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/index_011.jpg" alt=""
-                                     style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+            <!--第二组轮播结束-->
 
 
-                            </div>
-
-                            <div class="swiper-slide" style="height: 600px ;width: 100% ;margin: 0;padding: 0">
-                                <img src="./imgs/slide2.png" alt=""
-                                     style="height: 600px ;width: 100% ;margin: 0;padding: 0">
-                                <input class="ue-banbtn" value="登陆宠赞系统" type="button" @click="loginbtnclick()" style="border-radius: 25px; width: 156px;height: 50px ; left:150px ;top:430px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;">
-
-                                <input class="ue-banbtn" value="宠赞系统演示" type="button" @click="petshowbtnclick()" style="border-radius: 25px; width: 156px;height: 50px ; left:330px ;top:430px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;">
 
 
-                            </div>
+            <h1 style="font-size: 40px;font-weight: bold;text-align: center;line-height: 40px;height: 40px; margin: 0;padding: 0;margin-top: 15px;margin-bottom: 15px">
+                让宠物店生意更简单</h1>
 
-                        </div>
-                        <!-- 添加分页器 -->
-                        <div class="swiper-pagination"></div>
-                    </div>
+
+            <div span="24"
+                 style="height: 400px ;width: 100% ;margin: 0;padding: 0;border: 0 solid white;">
+
+                <el-row gutter="0">
+                    <el-col span="12">
+
+                        <img style="border-radius: 10px;"
+                             src="https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/pro1.png"
+                             alt=""
+                             style="height: 300px ;width: 100% ;margin-top: 30px;margin-bottom: 20px;margin-left: 20px;">
+
+                    </el-col>
+
+
+                    <el-col span="12">
+                        <p style="font-size: 30px;font-weight: bold ;text-align: left">
+                            宠物店首选的智慧经营管理系统</p>
+                        <p style="font-size: 20px;font-weight: bold ;text-align: left">
+                            让宠物店生意管理更加高效</p>
+                        <p style="text-align: left ; width: 90%;">
+                            宠老板采用现主流的云框架技术，数据云端储存，多重加密永不丢失；并且支持连锁门店的会员互通，会员卡消费记录实时共享等跨店操作。宠老板还支持电脑、手机、平板、商米等设备使用。</p><input type="button"
+                               style="border: none; border-radius: 4px; width: 98px;height: 34px ; background-color: #FAE132 ; "
+                               value="点击了解" @click="konwbtnclick()"></input>
+
+                    </el-col>
+
+                </el-row>
+
+
+
+            </div>
+
+
+            <div span="24"
+                 style="height: 400px ;width: 100% ;margin: 0;padding: 0;border: 0 solid white;">
+
+            <el-row gutter="0">
+
+
+
+                    <el-col span="12" style="padding-left: 30px">
+                        <p style="font-size: 30px;font-weight: bold ;text-align: left">
+                            移动看店，手机即可连接一切 </p>
+                        <p style="font-size: 25px;font-weight: bold ;text-align: left">
+                            手机、电脑同时管理宠物店 </p>
+                        <p style="text-align: left; width: 90%;">
+                            手机、电脑同时管理店铺，要多方便就有多方便。数据同步，电脑不在身边，手机就能实现收银结账、库存盘点、寄养安排等服务。  每日收益数据打开宠老板手机版就能全部了解，不再错过每一笔账单，收益清晰让心里更有 “数”。</p>
+                        <input type="button"
+                               style="border: none; border-radius: 4px; width: 98px;height: 34px ; background-color: #FAE132 ; "
+                               value="点击了解" @click="konwbtnclick()"></input>
+
+                    </el-col>
+
+                <el-col span="12">
+
+                    <img style="border-radius: 10px;"
+                         src="https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/pro2.png"
+                         alt=""
+                         style="height: 300px ;width: 100% ;margin-top: 30px;margin-bottom: 20px;margin-left: 20px;">
 
                 </el-col>
-            </el-row>
 
+                </el-row>
+
+
+            </div>
 
         </el-main>
 
@@ -250,15 +357,24 @@
             freeusebtnclick(x) {
                 alert("免费试用")
             },
-            loginbtnclick(){
+            loginbtnclick() {
                 alert("登陆宠赞系统")
 
             },
-            petshowbtnclick(){
+            petshowbtnclick() {
                 alert("宠赞系统演示")
 
             },
-            scanbtnclick(){
+            konwbtnclick() {
+                alert("点击了解")
+
+            },
+            konwSecondbtnclick(){
+                alert("点击了解")
+
+
+            },
+            scanbtnclick() {
                 alert("扫码演示")
 
             },
