@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Swipe Slide Demo</title>
+  <!-- 引入 Swipe 库 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+  <style>
+    body {
+      background-color: red;
+    }
+    .swiper-container {
+      width: 80%;
+      height: 400px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      background-color: #f7f7f7;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="./img/slide1.jpg" alt="">
+      <h3>标题1</h3>
+      <p>内容1</p>
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/slide2.jpg" alt="">
+      <h3>标题2</h3>
+      <p>内容2</p>
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/slide3.jpg" alt="">
+      <h3>标题3</h3>
+      <p>内容3</p>
+    </div>
+  </div>
+  <!-- 添加分页器 -->
+  <div class="swiper-pagination"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    // 设置图片轮播效果
+    effect: 'slide',
+    // 设置自动轮播
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    // 添加分页器
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+  });
+</script>
+</body>
+</html>
