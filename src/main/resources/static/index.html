@@ -444,6 +444,20 @@
 
             </div>
 
+            <el-row gutter="0">
+                <el-col span="24">
+                    <h1 style="font-size: 40px;font-weight: bold;text-align: center;line-height: 40px;height: 40px; margin: 0;padding: 0;margin-top: 15px;margin-bottom: 15px">
+                        优秀商家</h1>
+                  </el-col>
+            </el-row>
+
+            <el-row gutter="0">
+                <el-col span="24">
+
+                    <img   style="width: 8%; padding: 3%;" v-for="item in picarr" :src="item" alt="">
+
+                </el-col>
+            </el-row>
 
         </el-main>
 
@@ -455,7 +469,7 @@
             <h1 style="font-size: 40px;font-weight: bold;text-align: center;line-height: 40px;height: 40px; margin: 0;padding: 0;margin-top: 15px;margin-bottom: 15px">
                 宠物店都在用的管理系统</h1>
             <h1 style="font-size: 40px;font-weight: bold;text-align: center;line-height: 40px;height: 40px; margin: 0;padding: 0;margin-top: 15px;margin-bottom: 15px">
-                Create by 刘朝阳</h1>
+                Create by 刘朝阳 </h1>
 
         </el-footer>
 
@@ -479,12 +493,14 @@
 <script>
     let v = new Vue({
         el: '#app',
-        data: function () {
-            return {
+        data:  {
+
+                picarr:["https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz1.jpg", "https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz2.jpg","https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz3.jpg", "https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz4.jpg", "https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz2.jpg","https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz3.jpg", "https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz4.jpg", "https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz2.jpg","https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz3.jpg", "https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz4.jpg", "https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz2.jpg","https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz3.jpg", "https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz4.jpg", "https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz2.jpg","https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz3.jpg", "https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz4.jpg", "https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz2.jpg","https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz3.jpg", "https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz4.jpg", "https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz2.jpg","https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz3.jpg", "https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz4.jpg", "https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz2.jpg","https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz3.jpg", "https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz4.jpg", "https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz2.jpg","https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz3.jpg", "https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz4.jpg"],
                 user: {username: "", password: ""},
                 activeIndex: '1',
                 activeIndex2: '1',
-                toparr: [{
+                toparr: [
+                    {
                     title: "猫狗饲养增多，上海宠物管理立法时机如何？最新答复来.",
                     time: "发布时间：2023-04-27"
                 }, {
@@ -525,7 +541,26 @@
 
 
             }
-        },
+        ,
+
+
+        created:function () {
+
+            let arr = [];  //把图片路径装进一个数组 然后toString转成一个字符串 通过逗号分割
+            for(let i = 1;i <29; i++){
+                let aurl = "https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/guanwang/logo/hz" + i+".jpg";
+                arr.push(aurl);//把每一个图片的路径装进新的数组
+
+            }
+
+            // console.log(arr.toString())
+            // alert(arr.toString())
+            // v.picarr = arr;
+            // alert(v.picarr.toString())
+
+
+        }
+        ,
         methods: {
 
             f1() {

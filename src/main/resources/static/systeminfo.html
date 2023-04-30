@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .nav {
+            color: black;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        /*.nav:hover {*/
+        /*    color: #c9a96f;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div id="app">
+
+    <el-container style="padding: 0px;margin-top:0px;margin-bottom: 0px;margin-left: 0px;margin-right:0px ">
+
+
+        <el-header>
+            <img src="https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/logo.png" alt="" width="181px"
+                 height="60px">
+            <span style="position: absolute ;padding-left: 100px">
+
+    <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect"
+             text-color="black" active-text-color="#c9a96f">
+        <el-menu-item index="1"> 首页</el-menu-item>
+        <el-submenu index="2">
+            <template slot="title">系统介绍</template>
+            <el-menu-item index="2-1" style="width: 80px">宠老板介绍</el-menu-item>
+            <el-menu-item index="2-2" style="width: 80px">宠付宝介绍</el-menu-item>
+            <el-menu-item index="2-3" style="width: 80px">宠老板小程序</el-menu-item>
+            <el-menu-item index="2-4" style="width: 80px">宠赞管理系统</el-menu-item>
+        </el-submenu>
+                <el-menu-item index="3"> 系统下载</el-menu-item>
+                <el-menu-item index="4"> 进货商城</el-menu-item>
+                <el-menu-item index="5"> 商学院</el-menu-item>
+        <el-submenu index="6">
+            <template slot="title"><a class="nav" href="javascript:void(0)" style="text-decoration: none" @click="f(6)">关于宠老板</a></template>
+            <el-menu-item index="6-1" style="width: 80px">行业资讯</el-menu-item>
+            <el-menu-item index="6-2" style="width: 80px">常见问题</el-menu-item>
+            <el-menu-item index="6-3" style="width: 80px">视频教程</el-menu-item>
+            <el-menu-item index="6-4" style="width: 80px">公司公告</el-menu-item>
+            <el-menu-item index="6-5" style="width: 80px">硬件购买</el-menu-item>
+        </el-submenu>
+    </el-menu>
+    </span>
+            <input type="button" style="border: none; border-radius: 4px; width: 98px;height: 34px ; background-color: #FAE132 ; position: absolute ; right: 150px ;top:20px;"  value="快速注册" @click="reg()"></input>
+            <input type="button" style="border: 1px solid #FAE132; border-radius: 4px; width: 60px;height: 34px ; background-color: white ; position: absolute ; right: 50px ;top:20px;"  value="登陆" @click="login()"></input>
+        </el-header>
+
+
+        <el-main style="padding: 0;margin: 0">
+
+            <!--            <span style="position: absolute">-->
+            <!--            <img  src="https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/bannerbg_2.jpg" alt="" style="height: 791px ;width: 100% ;margin: 0;padding: 0" >-->
+            <!--            </span>-->
+
+            <div
+                    style="height: 600px ;width: 100% ;margin: 0;padding: 0;border: 0 solid white;">
+                <input class="ue-banbtn" value="免费试用" type="button" @click="freeusebtnclick()"
+                       style="border-radius: 25px; width: 156px;height: 50px ; left:150px ;top:380px;pxcolor: black;position:  absolute ; background-color: transparent ; cursor: pointer;border: 1px solid">
+
+                <img src="./imgs/slide1.png" alt=""
+                     style="height: 600px ;width: 100% ;margin: 0;padding: 0">
+
+
+            </div>
+
+
+
+
+        </el-main>
+
+        <el-footer>Footer</el-footer>
+    </el-container>
+</div>
+</body>
+
+
+<!-- 引入样式 -->
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+<!-- import Vue before Element -->
+<script src="https://cdn.staticfile.org/vue/2.6.14/vue.min.js"></script>
+<!-- import JavaScript -->
+<script src="https://cdn.staticfile.org/element-ui/2.15.9/index.min.js"></script>
+<script>
+    let v = new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                user: {username: "", password: ""},
+                activeIndex: '2',
+                activeIndex2: '2'
+            }
+        },
+        methods: {
+            f(x) {
+                switch (x) {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                }
+            },
+            handleSelect(key, keyPath) {
+                console.log(key, keyPath);
+            }
+        }
+    })
+</script>
+</html>
