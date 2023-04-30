@@ -11,46 +11,11 @@
       margin: 0;
       padding: 0;
     }
-    /*.nav:hover {*/
-    /*    color: #c9a96f;*/
-    /*}*/
+
   </style>
 </head>
 <body>
-<div id="app">
-<!-- el-header   Header-->
-<!--    <el-header>-->
-<!--    <img src="https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/logo.png" alt="" width="181px"-->
-<!--       height="60px">-->
-<!--  <span style="position: absolute ;padding-left: 100px">-->
-<!--      -->
-<!--    <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect"-->
-<!--             text-color="black" active-text-color="#c9a96f">-->
-<!--        <el-menu-item index="1"> 首页</el-menu-item>-->
-<!--        <el-submenu index="2">-->
-<!--            <template slot="title">系统介绍</template>-->
-<!--            <el-menu-item index="2-1" style="width: 80px">宠老板介绍</el-menu-item>-->
-<!--            <el-menu-item index="2-2" style="width: 80px">宠付宝介绍</el-menu-item>-->
-<!--            <el-menu-item index="2-3" style="width: 80px">宠老板小程序</el-menu-item>-->
-<!--            <el-menu-item index="2-4" style="width: 80px">宠赞管理系统</el-menu-item>-->
-<!--        </el-submenu>-->
-<!--                <el-menu-item index="3"> 系统下载</el-menu-item>-->
-<!--                <el-menu-item index="4"> 进货商城</el-menu-item>-->
-<!--                <el-menu-item index="5"> 商学院</el-menu-item>-->
-<!--        <el-submenu index="6">-->
-<!--            <template slot="title"><a class="nav" href="javascript:void(0)" style="text-decoration: none" @click="f(6)">关于宠老板</a></template>-->
-<!--            <el-menu-item index="6-1" style="width: 80px">行业资讯</el-menu-item>-->
-<!--            <el-menu-item index="6-2" style="width: 80px">常见问题</el-menu-item>-->
-<!--            <el-menu-item index="6-3" style="width: 80px">视频教程</el-menu-item>-->
-<!--            <el-menu-item index="6-4" style="width: 80px">公司公告</el-menu-item>-->
-<!--            <el-menu-item index="6-5" style="width: 80px">硬件购买</el-menu-item>-->
-<!--        </el-submenu>-->
-<!--    </el-menu>-->
-<!--    </span>-->
-<!--  <input type="button" style="border: none; border-radius: 4px; width: 98px;height: 34px ; background-color: #FAE132 ; position: absolute ; right: 150px ;top:20px;"  value="快速注册" @click="reg()"></input>-->
-<!--  <input type="button" style="border: 1px solid #FAE132; border-radius: 4px; width: 60px;height: 34px ; background-color: white ; position: absolute ; right: 50px ;top:20px;"  value="登陆" @click="login()"></input>-->
-<!--    </el-header>    -->
-        <el-container style="padding: 0px;margin-top:0px;margin-bottom: 0px;margin-left: 0px;margin-right:0px ">
+<div id="app">  <el-container style="padding: 0px;margin-top:0px;margin-bottom: 0px;margin-left: 0px;margin-right:0px ">
 
 
             <el-header>
@@ -59,7 +24,7 @@
                 <span style="position: absolute ;padding-left: 100px">
 
     <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect"
-             text-color="black" active-text-color="#c9a96f">
+             text-color="black" active-text-color="#c9a96f" style="overflow: hidden;display: inline-block;margin: 0;padding: 0" >
         <el-menu-item index="1"> 首页</el-menu-item>
         <el-submenu index="2">
             <template slot="title">系统介绍</template>
