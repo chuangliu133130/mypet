@@ -180,7 +180,8 @@
                                         <img style="border-radius: 10px;"
                                              src="https://www.chonglaoban.cn/Application/Modules/Index/Tpl/Public/images/index_011.jpg"
                                              alt=""
-                                             style="height: 300px ;width: 100% ;margin-top: 30px;margin-bottom: 20px;margin-left: 20px;">
+                                             style="
+                                             height: 300px ;width: 100% ;margin-top: 30px;margin-bottom: 20px;margin-left: 20px;">
 
                                     </el-col>
 
@@ -656,6 +657,11 @@
             },
             handleSelect(key, keyPath) {
                 console.log(key, keyPath);
+                alert(keyPath)
+                if (key == "2-1" ||key == "2-2" ||key == "2-3" ||key == "2-4"  ){
+                    v.activeIndex = 2;
+                    location.href = "/systeminfo.html"
+                }
             }
         }
     })
